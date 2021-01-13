@@ -19,5 +19,8 @@ namespace Zently.Models
         public MembershipType MembershipType { get; set; }
 
         public byte MembershipTypeId { get; set; }
+
+        //Nullable date
+        public DateTime? Birthday { get; set; }
     }
 }
