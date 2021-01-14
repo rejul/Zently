@@ -211,9 +211,18 @@
     <Compile Include="Migrations\202101131123084_AddBirthdaynullable.Designer.cs">
       <DependentUpon>202101131123084_AddBirthdaynullable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202101140909561_AddGenre.cs" />
+    <Compile Include="Migrations\202101140909561_AddGenre.Designer.cs">
+      <DependentUpon>202101140909561_AddGenre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202101141001461_AddGenreDetails.cs" />
+    <Compile Include="Migrations\202101141001461_AddGenreDetails.Designer.cs">
+      <DependentUpon>202101141001461_AddGenreDetails.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\Genre.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\MembershipType.cs" />
@@ -223,6 +232,10 @@
     <Compile Include="ViewModels\RandomMovieViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\aspnet-Zently-20210105074420.mdf" />
+    <Content Include="App_Data\aspnet-Zently-20210105074420_log.ldf">
+      <DependentUpon>aspnet-Zently-20210105074420.mdf</DependentUpon>
+    </Content>
     <Content Include="Content\bootstrap-superhero.css" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -284,10 +297,10 @@
     <Content Include="Views\Shared\_NavBar.cshtml" />
     <Content Include="Views\Customers\Index.cshtml" />
     <Content Include="Views\Customers\Details.cshtml" />
+    <Content Include="Views\Movies\Index.cshtml" />
+    <Content Include="Views\Movies\Details.cshtml" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -328,6 +341,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202101131123084_AddBirthdaynullable.resx">
       <DependentUpon>202101131123084_AddBirthdaynullable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202101140909561_AddGenre.resx">
+      <DependentUpon>202101140909561_AddGenre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202101141001461_AddGenreDetails.resx">
+      <DependentUpon>202101141001461_AddGenreDetails.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
