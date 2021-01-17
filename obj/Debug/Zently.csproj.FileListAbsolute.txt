@@ -117,3 +117,4 @@ E:\Zently\obj\Debug\Zently.csproj.CopyComplete
 E:\Zently\obj\Debug\Zently.dll
 E:\Zently\obj\Debug\Zently.pdb
 E:\Zently\obj\Debug\Zently.Migrations.AddGenreDetails.resources
+E:\Zently\obj\Debug\Zently.csprojAssemblyReference.cache

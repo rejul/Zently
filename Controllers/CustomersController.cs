@@ -5,6 +5,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using Zently.Models;
+using Zently.ViewModels;
 
 namespace Zently.Controllers
 {
@@ -24,6 +25,8 @@ namespace Zently.Controllers
             _context.Dispose();
         }
 
+
+
         //GET: Customers/
         public ViewResult Index()
         {
@@ -34,6 +37,8 @@ namespace Zently.Controllers
 
         }
 
+
+
          // GET: Customers/Details/{id}
         public ActionResult Details(int id)
         {
@@ -43,7 +48,24 @@ namespace Zently.Controllers
             return View(customer);
         }
 
+        //
+        public ActionResult New()
+        {
+            var membershipType = _context.MembershipTypes.ToList();
 
+            var viewModel = new NewCustomerViewModel
+            {
+                MembershipTypes = membershipType
+            };
+             
+             return View(viewModel);
+        }
+
+        [HttpPost]
+        public ActionResult Create(Customer customer)
+        {
+            return View();
+        }
        
 
     }
